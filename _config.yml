@@ -3,8 +3,8 @@ title: Cumulistas
 email: cumulistas@gmail.com
 description: >- # Esto permite escribir en varias líneas
   Proyecto de divulgación científica de climatología y meteorología.
-baseurl: "" # Déjalo vacío si es el repositorio principal (usuario.github.io)
-url: "https://github.com/abigail-nc/cumulistas.github.io" # Tu URL de GitHub Pages
+baseurl: "/cumulistas.github.io" # Déjalo vacío si es el repositorio principal (usuario.github.io)
+url: "https://github.com/abigail-nc.github.io" # Tu URL de GitHub Pages
 
 # Configuración de Colecciones (Para tus boletines de pronóstico)
 collections:

@@ -1,0 +1,24 @@
+# Información del Sitio
+title: Cumulistas
+email: cumulistas@gmail.com
+description: >- # Esto permite escribir en varias líneas
+  Proyecto de divulgación científica de climatología y meteorología.
+baseurl: "" # Déjalo vacío si es el repositorio principal (usuario.github.io)
+url: "https://tu-usuario.github.io" # Tu URL de GitHub Pages
+
+# Configuración de Colecciones (Para tus boletines de pronóstico)
+collections:
+  boletines:
+    output: true # Esto le dice a Jekyll que genere una página web para cada boletín
+    permalink: /boletines/:title/
+
+# Configuración de Markdown
+markdown: kramdown
+theme: minima # Un tema básico por defecto para empezar, luego puedes personalizar el CSS
+
+# Archivos a ignorar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/

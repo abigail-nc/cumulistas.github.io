@@ -11,7 +11,7 @@ title: Inicio
 
   <div class="welcome-section">
     <div class="welcome-text">
-      ¡Bienvenidos a cumulistas! Este es un espacio para aprender y compartir ciencia. Si te interesa colaborar con nosotros, escríbenos a [cumulistas@gmail.com](cumulistas@gmail.com)
+      ¡Bienvenidos a cumulistas! Este es un espacio para aprender y compartir ciencia. Si te interesa colaborar con nosotros, escríbenos a cumulistas@gmail.com
     </div>
   </div>
 

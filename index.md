@@ -1,7 +1,34 @@
 ---
-layout: home
-title: Bienvenidos Cumulistas
+layout: default
+title: Inicio
 ---
+
+<div class="sky-banner">
+  <img src="{{ '/assets/images/imagen-del-cielo.png' | relative_url }}" alt="Imagen del cielo">
+</div>
+
+<div class="main-grid">
+
+  <div class="welcome-section">
+    <div class="welcome-text">
+      Mensaje de bienvenida + mensaje de bienvenida + mensaje de bienvenida + mensaje de bienvenida
+    </div>
+    
+    <div class="social-block">
+      <h4>Logos de redes</h4>
+      <div class="social-icons">
+        <a href="#"><img src="{{ '/assets/images/icono-red1.png' | relative_url }}" alt="Red 1"></a>
+        <a href="#"><img src="{{ '/assets/images/icono-red2.png' | relative_url }}" alt="Red 2"></a>
+        <a href="#"><img src="{{ '/assets/images/icono-red3.png' | relative_url }}" alt="Red 3"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="forecast-card">
+    <img src="{{ '/assets/images/pronostico-del-dia.png' | relative_url }}" alt="Pronostico del dia">
+  </div>
+
+</div>
 
 # Observando el cielo juntos
 

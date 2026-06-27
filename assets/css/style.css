@@ -1,15 +1,13 @@
 /* Importar tipografía limpia: Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Variables globales de diseño */
 :root {
   --background-white: #FAFAFA;
   --text-dark: #333333;
-  --accent-color: #3498db; /* Un azul suave para enlaces */
-  --header-height: 80px;
+  --footer-bg: #595854; /* El gris oscuro de tu imagen */
+  --font-clean: 'Roboto', sans-serif;
 }
 
-/* Estilos Globales */
 * {
   box-sizing: border-box;
 }
@@ -19,105 +17,154 @@ body {
   padding: 0;
   background-color: var(--background-white);
   color: var(--text-dark);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-clean);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h1, h2, h3 {
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
-/* --- Contenedor Principal (Jerarquía) --- */
+/* --- Contenedor Global --- */
 .site-wrapper {
-  max-width: 1200px; /* Ancho máximo para legibilidad */
-  margin: 0 auto;    /* Centrado horizontal */
+  max-width: 900px; /* Un ancho más compacto y elegante como tu imagen */
+  width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-/* --- Cabecera (Según boceto) --- */
+/* --- CABECERA --- */
 header {
-  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
 }
 
-header .logo-box {
-  border: 1px solid black; /* Como en tu dibujo */
-  padding: 5px 15px;
+header .brand {
+  font-size: 1.5rem;
   font-weight: 700;
+  color: #000000;
 }
 
-header nav ul {
-  list-style: none;
+header nav {
   display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  gap: 25px;
 }
 
 header nav a {
   color: var(--text-dark);
-  font-size: 0.95rem;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-header .social-icons {
+/* --- CONTENIDO PRINCIPAL (HOME) --- */
+main {
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+/* Imagen del cielo (Banner superior) */
+.sky-banner {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sky-banner img {
+  width: 100%;
+  border-radius: 4px; /* Un toque sutil */
+  display: block;
+}
+
+/* Fila de Bienvenida + Pronóstico */
+.main-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.welcome-section {
+  flex: 1.2;
+}
+
+.welcome-text {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Bloque de Redes Sociales abajo del texto */
+.social-block h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.social-icons {
   display: flex;
   gap: 15px;
 }
 
-/* --- Contenido Principal (Grilla) --- */
-main {
-  display: flex;
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Tarjeta de Pronóstico del Día */
+.forecast-card {
+  flex: 1;
+}
+
+.forecast-card img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+/* --- PIE DE PÁGINA (FOOTER OSCURO) --- */
+footer {
+  background-color: var(--footer-bg);
+  color: #FFFFFF;
   padding: 40px 0;
-  gap: 40px;
+  margin-top: auto;
 }
 
-.main-content {
-  flex: 3; /* Más ancho */
+footer .footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Estilos específicos para la Grilla (Home) y Post simple (Interior) */
-.home-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+footer .footer-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-.home-grid .wide-card {
-  grid-column: span 2; /* Tarjeta ancha 'Foto del Cielo' */
-  border: 1px solid black;
-  padding: 20px;
-}
-
-.home-grid .block {
-  border: 1px solid black;
-  padding: 20px;
-}
-
-/* --- Sidebar (Según boceto) --- */
-aside {
-  flex: 1; /* Más angosto */
+footer .footer-nav {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: flex-end;
+  gap: 5px;
 }
 
-aside .block {
-  border: 1px solid black;
-  padding: 20px;
+footer .footer-nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.9;
 }
 
-/* --- Pie de Página (Footer) --- */
-footer {
-  text-align: center;
-  padding: 40px 0;
-  border-top: 1px solid #ddd;
-  margin-top: auto;
+footer .footer-nav a:hover {
+  opacity: 1;
+}
+
+/* Menú hamburguesa sutil para móvil */
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }

@@ -15,6 +15,27 @@ collections:
 # Configuración de Markdown
 markdown: kramdown
 theme: minima # Un tema básico por defecto para empezar, luego puedes personalizar el CSS
+# Tipografía y Color Base (para referencia, el CSS lo define)
+theme_config:
+  font: "Roboto"
+  base_color: "#FAFAFA"
+
+# Configuración de los bloques del Footer (opcional, para limpieza)
+social_links:
+  - name: Threads
+    url: "https://www.threads.com/@cumulistas"
+  - name: Instagram
+    url: "https://www.instagram.com/cumulistas/"
+  - name: Grupo para reporteros
+    url: "https://l.instagram.com/?u=https%3A%2F%2Fig.me%2Fj%2FAbajL6c9HhgTctsI%2F%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnFj_HGLogA6YmagWvqAGBZ8pn22PuTlpvTU6JLpZmx-wkyDWO8_frLOkk-QM_aem_yn1voe7agGKGYjidj6cf4Q&e=AUB27fXS4T7t7qrd4WzKej3mHdq4Y9kJCAq0kTo0gtbdBOL8mpr9XwOYqgbSJZ9xzTUI-WhD_0HP24mTHe-HJ9NZFlCcucyjYiJ4q5dUHfn-38a2nBqpT_tOLgNyeZKLDJio4ho-UCyt04I"
+
+
+# No toques esto
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+
 
 # Archivos a ignorar
 exclude:
